@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {% block body_block %}
+        <h1>  WELCOME TO INDEX </h1>
+        <h2> This is index.html</h2>
+        <h1>{{ text|upper }}</h1> # Using Built in filters
+        <h1>{{ text|cut:'world' }}</h1> # Using custom filters
+        <h1>{{ number|add:"99" }}</h1> # Using Built in filters
+    {% endblock %}
